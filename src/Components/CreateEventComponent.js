@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import EventService from "../services/EventService";
 
+
 const CreateEventComponent = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -47,11 +48,11 @@ const CreateEventComponent = () => {
 
     if (id === "_add") {
       EventService.createEvent(event).then((res) => {
-        navigate("/events");
+        navigate("/admin");
       });
     } else {
       EventService.updateEvent(event, id).then((res) => {
-        navigate("/events");
+        navigate("/admin");
       });
     }
   };
@@ -85,7 +86,7 @@ const CreateEventComponent = () => {
   };
 
   const cancel = () => {
-    navigate("/events");
+    navigate("/admin");
   };
 
   const getTitle = () => {

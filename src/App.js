@@ -4,32 +4,32 @@ import "./App.css";
 import { button } from "reactstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-import ListEventComponents from "./Components/ListEventComponents";
 import HeaderComponent from "./Components/HeaderComponent";
 import FooterComponent from "./Components/FooterComponent";
 import CreateEventComponent from "./Components/CreateEventComponent";
+import RegistrationComponent from "./Components/RegistrationComponent";
+import AdminComponentWrapper from "./Components/AdminComponent";
+import UserComponent from "./Components/UserComponent";
 // import UpdateEventComponent from "./Components/UpdateEventComponent";
 
 function App() {
   return (
     <div>
       <Router>
-        
-          <HeaderComponent />
-          <div className="container">
-            <Routes>
-              <Route path="/" exact element={<ListEventComponents />}></Route>
-              <Route path="/events" element={<ListEventComponents />}></Route>
-              <Route path="/add-event/:id" element={<CreateEventComponent />}></Route>
-              {/* <Route path="/update-event/:id" element={<UpdateEventComponent />}></Route> */}
-              {/* <ListEventComponents /> */}
-            </Routes>
-          </div>
-          <FooterComponent />
-        
+        <HeaderComponent />
+        <div className="container">
+          <Routes>
+            <Route exact path="/" element={<UserComponent />} />
+            <Route path="/register/:id" element={<RegistrationComponent />} />
+            <Route path="/admin" element={<AdminComponentWrapper />} />
+            <Route path="/admin/:id" element={<CreateEventComponent />}></Route>
+          </Routes>
+        </div>
+        <FooterComponent />
       </Router>
     </div>
   );
 }
 
 export default App;
+
