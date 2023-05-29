@@ -10,7 +10,9 @@ import CreateEventComponent from "./Components/CreateEventComponent";
 import RegistrationComponent from "./Components/RegistrationComponent";
 import AdminComponentWrapper from "./Components/AdminComponent";
 import UserComponent from "./Components/UserComponent";
-// import UpdateEventComponent from "./Components/UpdateEventComponent";
+import LoginPage from "./Components/LoginPage";
+import EventComponent from "./Components/EventComponent";
+
 
 function App() {
   return (
@@ -19,10 +21,13 @@ function App() {
         <HeaderComponent />
         <div className="container">
           <Routes>
-            <Route exact path="/" element={<UserComponent />} />
+            <Route exact path="/" element={<EventComponent />} />
+            <Route exact path="/login" element={<LoginPage />} />
+            <Route path ="/user" element={<UserComponent />} />
             <Route path="/register/:id" element={<RegistrationComponent />} />
             <Route path="/admin" element={<AdminComponentWrapper />} />
             <Route path="/admin/:id" element={<CreateEventComponent />}></Route>
+            
           </Routes>
         </div>
         <FooterComponent />

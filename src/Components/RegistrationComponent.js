@@ -54,6 +54,7 @@ const RegistrationComponent = () => {
         setOrganization("");
         setDesignation("");
         setEmail("");
+        navigate("/user");
       })
       .catch((error) => {
         console.error(error); 
@@ -121,7 +122,7 @@ const RegistrationComponent = () => {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary" >
           Register
         </button>
       </form>
