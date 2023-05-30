@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,9 +17,8 @@ function LoginPage() {
       setLoggedIn(true);
     } else if (email === "user@example.com" && password === "user") {
       setLoggedIn(true);
-
     } else if (email === "user1@example.com" && password === "user1") {
-        setLoggedIn(true);
+      setLoggedIn(true);
     } else {
       alert("Invalid email or password");
     }
