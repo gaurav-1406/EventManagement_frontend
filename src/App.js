@@ -1,9 +1,6 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { button } from "reactstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
 import HeaderComponent from "./Components/HeaderComponent";
 import FooterComponent from "./Components/FooterComponent";
 import CreateEventComponent from "./Components/CreateEventComponent";

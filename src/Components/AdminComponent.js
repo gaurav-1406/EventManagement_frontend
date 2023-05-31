@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import EventService from "../services/EventService";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function AdminComponent() {
   const [events, setEvents] = useState([]);
