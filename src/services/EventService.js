@@ -42,4 +42,4 @@ class EventService {
   
 }
 
-export default new EventService;
+export default new EventService();
