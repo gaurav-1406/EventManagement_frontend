@@ -1,13 +1,13 @@
 
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import member1 from "/Users/gauravgupta/Desktop/React/frontend/src/Components/Team/arindom.jpg";
-import member2 from "/Users/gauravgupta/Desktop/React/frontend/src/Components/Team/gaurav.jpg";
-import member3 from "/Users/gauravgupta/Desktop/React/frontend/src/Components/Team/neha.jpeg";
-import member4 from "/Users/gauravgupta/Desktop/React/frontend/src/Components/Team/pratiksha.jpg";
-import member5 from "/Users/gauravgupta/Desktop/React/frontend/src/Components/Team/samiksha.jpg";
-import member6 from "/Users/gauravgupta/Desktop/React/frontend/src/Components/Team/shreya.jpeg";
-import member7 from "/Users/gauravgupta/Desktop/React/frontend/src/Components/Team/stuti.jpeg";
+import member1 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/arindom.jpg";
+import member2 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/gaurav.jpg";
+import member3 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/neha.jpeg";
+import member4 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/pratiksha.jpg";
+import member5 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/samiksha.jpg";
+import member6 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/shreya.jpeg";
+import member7 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/stuti.jpeg";
 
 function TeamComponent() {
   const navigate = useNavigate();
