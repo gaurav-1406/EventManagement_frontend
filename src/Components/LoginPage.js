@@ -12,12 +12,12 @@ function LoginPage() {
     e.preventDefault();
 
     // Check if email and password match admin or user credentials
-    if (email === "admin@example.com" && password === "admin") {
+    if (email === "admin@gmail.com" && password === "admin") {
       setIsAdmin(true);
       setLoggedIn(true);
-    } else if (email === "user@example.com" && password === "user") {
+    } else if (email === "user@gmail.com" && password === "user") {
       setLoggedIn(true);
-    } else if (email === "user1@example.com" && password === "user1") {
+    } else if (email === "user1@gmail.com" && password === "user1") {
       setLoggedIn(true);
     } else {
       alert("Invalid email or password");

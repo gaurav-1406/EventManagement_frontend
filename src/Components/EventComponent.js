@@ -1,9 +1,11 @@
+
 import React, { useEffect, useState } from "react";
 import EventService from "../services/EventService";
 import { useNavigate } from "react-router-dom";
 
 function EventComponent() {
   const [events, setEvents] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     EventService.getEvents().then((res) => {
@@ -11,10 +13,12 @@ function EventComponent() {
     });
   }, []);
 
-  const navigate = useNavigate();
-
   const handleLogin = () => {
     navigate("/login");
+  };
+
+  const handleTeam = () => {
+    navigate("/team");
   };
 
   return (
@@ -22,6 +26,9 @@ function EventComponent() {
       <div className="login-button-container">
         <button className="login-button" onClick={handleLogin}>
           Login
+        </button>
+        <button className="team-button" onClick={handleTeam}>
+          Team
         </button>
       </div>
       <div className="body">
@@ -64,3 +71,4 @@ function EventComponent() {
 }
 
 export default EventComponent;
+

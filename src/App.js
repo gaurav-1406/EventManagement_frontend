@@ -9,6 +9,7 @@ import AdminComponentWrapper from "./Components/AdminComponent";
 import UserComponent from "./Components/UserComponent";
 import LoginPage from "./Components/LoginPage";
 import EventComponent from "./Components/EventComponent";
+import TeamComponent from "./Components/TeamComponent";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<EventComponent />} />
             <Route exact path="/login" element={<LoginPage />} />
+            <Route exact path ="/team" element={<TeamComponent />} />
             <Route path ="/user" element={<UserComponent />} />
             <Route path="/register/:id" element={<RegistrationComponent />} />
             <Route path="/admin" element={<AdminComponentWrapper />} />

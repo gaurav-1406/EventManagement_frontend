@@ -135,6 +135,60 @@
   margin-bottom: 10px;
 }
 
+.team-component {
+  padding: 0px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.team-member h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  color: #888;
+}
+
+.team-button {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.team-title {
+  text-align: center;
+}
+
+.back-button {
+  display: block;
+  margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+
 
 
 
