@@ -1,14 +1,15 @@
 
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import member1 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/arindom.jpg";
-import member2 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/gaurav.jpg";
-import member3 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/neha.jpeg";
-import member4 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/pratiksha.jpg";
-import member5 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/samiksha.jpg";
-import member6 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/shreya.jpeg";
-import member7 from "/Users/gauravgupta/Desktop/React/frontend/src/Team/stuti.jpeg";
+import member1 from "../Images/arindom.jpg";
+import member2 from "../Images/gaurav.jpg";
+import member3 from "../Images/neha.jpeg";
+import member4 from "../Images/pratiksha.jpg";
+import member5 from "../Images/samiksha.jpg";
+import member6 from "../Images/shreya.jpeg";
+import member7 from "../Images/stuti.jpeg";
 
+ 
 function TeamComponent() {
   const navigate = useNavigate();
 
